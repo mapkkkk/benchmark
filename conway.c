@@ -9,6 +9,8 @@
 #define Ny 2160
 uint8_t a[Ny][Nx] = {0};
 uint8_t sum[Ny][Nx] = {0};
+//int a[Ny][Nx] = {0};
+//int sum[Ny][Nx] = {0};
 
 void readPattern(char *filename) {
 	FILE *file = fopen(filename, "r");
@@ -132,6 +134,7 @@ int main(int argc, char **argv) {
 	// >4) a[i][j] = 1;
 	// }
 	// }
+	printf("Starting............................");
 	readPattern("test_pattern");
 
 	struct timeval start;
